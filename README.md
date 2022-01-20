@@ -32,4 +32,5 @@ I opted to make a landing page with anchors rather than several paginas.
 
 💻 Result:
 
+Veja a aplicação [aqui](https://barbearia-lyart.vercel.app/)
 ![Preview page GIF](./imagens/preview.gif)
