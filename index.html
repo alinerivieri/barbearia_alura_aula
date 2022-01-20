@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Alura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1><img src="./imagens/logo.png" alt="Logo Barbearia Alura"></h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#box-2">Serviços</a></li>
+        <li><a href="#box-3">Contato</a></li>
+        <li><a href="#box-4">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="box-1">
+      <div class="sobre">
+        <h2>Sobre a Barbearia Alura</h2> <br>
+
+        <p>Localizada no coração da cidade a <strong> Barbearia Alura </strong> traz para o mercado o que há de melhor
+          para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
+          clientes a cada dia.</p><br>
+
+        <p>Nossa missão é: <i>"Proporcionar auto-estima e qualidade de vida aos clientes".</i></p><br>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de
+          excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+      </div>
+    </div>
+    <a href="#box-2">
+      <img class="scroll" src="./imagens/scroll-bar.png" height="40px" alt="Descer a tela" title="Descer"></a>
+    <div id="box-2">
+      <h2>Nossos Serviços:</h2>
+      <section class="servicos">
+        <div class="servico">
+          <h2>Cabelo</h2>
+          <img src="./imagens/cabelo.jpeg" alt="Cortando o cabelo" />
+          <p>Na tesoura, maquina ou navalha, como o cliente preferir</p>
+          <h3>R$ 25,00</h3>
+        </div>
+        <div class="servico">
+          <h2>Barba</h2>
+          <img src="./imagens/barba.jpeg" alt="Fazendo a barba" />
+          <p>Corte e desenho profissional de barba</p>
+          <h3>R$ 18,00</h3>
+        </div>
+        <div class="servico">
+          <h2>Cabelo + Barba</h2>
+          <img src="./imagens/barba+cabelo.jpeg" alt="Utensilios barbeiro" />
+          <p>Pacote completo de cabelo e barba</p>
+          <h3>R$ 35,00</h3>
+        </div>
+      </section>
+    </div>
+    <a href="#box-3"><img class="scroll" src="./imagens/scroll-bar.png" height="40px" alt="Descer a tela" title="Descer"></a>
+    <div id="box-3">
+
+      <div class="banner"></div>
+
+      <div class="contato">
+        <h3>Entre em contato conosco:</h3>
+        <form action="">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" class="input-padrao" placeholder="Nome e sobrenome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" class="input-padrao" placeholder="seunome@dominio.com" required />
+
+          <label for="phone">Telefone:</label>
+          <input type="phone" id="phone" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required />
+
+          <label for="message">Deixe sua mensagem: </label>
+          <textarea name="message" id="message" cols="62" rows="3" class="input-padrao"
+            placeholder="Escreva aqui sua mensagem" required></textarea>
+
+          <fieldset>
+            <legend>Como prefere nosso contato? </legend>
+
+            <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email"> E-mail:</label>
+
+            <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone" value="telefone">
+              Telefone:</label>
+
+            <label for="radio-wpp"><input type="radio" name="contato" id="radio-wpp" value="whatsapp" checked>
+              Whatsapp:</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select name="horario" id="input-horario">
+              <option value="horario">Manhã</option>
+              <option value="horario">Tarde</option>
+              <option value="horario">Noite</option>
+            </select>
+          </fieldset>
+
+          <label class="newsletter"><input type="checkbox" checked> Gostaria de receber nossa Newsletter?</label>
+
+          <input type="submit" value="Enviar formulário" class="input-send" />
+        </form>
+      </div>
+    </div>
+  </main>
+  <div id="box-4">
+    <div class="informacoes">
+      <table>
+        <thead>
+          <tr>
+            <th>Atendimento:</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>08:00 as 20:00</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>08:00 as 20:00</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>08:00 as 20:00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td>barbearia@alura.com.br</td>
+          </tr>
+          <tr>
+            <td>Telefone</td>
+            <td>(11) 2222-2222</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="mapa-section">
+        <p>Localização:</p>
+        <iframe class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58830.71389307196!2d-47.29632204377801!3d-22.842463220761204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bcfd64c3182d%3A0x8e575af90f766b31!2zU3VtYXLDqSwgU1A!5e0!3m2!1spt-BR!2sbr!4v1642636743398!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <img src="/imagens/logo-branco.png" alt="Logo Barbearia Alura branco">
+    <p>&#169; Copyright Alura - Por Aline Rivieri</p>
+  </footer>
+</body>
+
+</html>
